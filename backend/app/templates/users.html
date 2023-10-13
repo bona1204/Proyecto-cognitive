@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Usuarios</title>
+</head>
+<body>
+    <h1>Lista de Usuarios</h1>
+    
+    <table>
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Nombre de Usuario</th>
+                <th>Email</th>
+                <!-- Agregar más columnas si es necesario -->
+            </tr>
+        </thead>
+        <tbody>
+            {% for user in users %}
+            <tr>
+                <td>{{ user.id }}</td>
+                <td>{{ user.username }}</td>
+                <td>{{ user.email }}</td>
+                <!-- Agregar más datos si es necesario -->
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+</body>
+</html>
