@@ -1,35 +1,40 @@
-from flask import render_template, redirect, url_for, request, flash
+from flask import render_template,jsonify, redirect, url_for, request, flash
 from app import app, db
 from app.models import User, Sensor, Admin
-
 
 @app.route('/')
 def index():
     return "Hola, bienvenido a mi aplicación Flask!"
+
 # Rutas para User
 @app.route('/users', methods=['GET', 'POST'])
 def list_users():
     if request.method == 'POST':
-        username = request.form['username']
-        email = request.form['email']
-        user = User(username=username, email=email) 
+        data = request.get_json()
+        username = data.get('username')
+        password = data.get('password')
+        email = data.get('email')
+        user = User(username=username, password=password, email=email) 
         db.session.add(user)
         db.session.commit()
         flash('Usuario creado con éxito!')
         return redirect(url_for('list_users'))
     users = User.query.all()
-    return render_template('users.html', users=users)
+    users=list(map(lambda item: item.serialize(), users))
+    return jsonify(users),200
 
 @app.route('/users/edit/<int:id>', methods=['GET', 'POST'])
 def edit_user(id):
     user = User.query.get_or_404(id)
     if request.method == 'POST':
-        user.username = request.form['username']
-        user.email = request.form['email']
+        data = request.get_json()
+        user.username = data.get('username')
+        user.password = data.get('password')
+        user.email = data.get('email')
         db.session.commit()
         flash('Usuario actualizado con éxito!')
         return redirect(url_for('list_users'))
-    return render_template('edit_user.html', user=user)
+    return jsonify(user)
 
 @app.route('/users/delete/<int:id>', methods=['POST'])
 def delete_user(id):
@@ -39,4 +44,4 @@ def delete_user(id):
     flash('Usuario eliminado con éxito!')
     return redirect(url_for('list_users'))
 
-# (Similarmente, puedes agregar rutas para Sensor, RegistroSensor y Admin...)
+
