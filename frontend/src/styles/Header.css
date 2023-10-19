@@ -1,0 +1,44 @@
+
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #009c77;
+            padding: 20px 40px;  /* Increased padding for a thicker navbar */
+        }
+
+        .navbar-brand {
+            font-size: 24px;
+            font-weight: bold;
+            color: white;
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 40px;  /* Increased gap between links */
+        }
+
+        .nav-links a {
+            color: white;
+            text-decoration: none;
+            padding: 5px 10px;
+            transition: color 0.3s ease;
+        }
+
+        .nav-links a:hover {
+            color: black;
+        }
+
+        .nav-links .client-area {
+            background-color: #36ff4a;  /* Different color for "Área de Clientes", change as desired */
+            padding: 5px 20px;  /* Increased padding for this button */
+            border-radius: 5px;
+            color: black;
+            font-weight: bolder;
+            transition: background-color 0.2s ease;
+        }
+
+        .nav-links .client-area:hover {
+            background-color: rgb(9, 184, 3); 
+            color: white; /* Hover effect for "Área de Clientes" */
+        }
