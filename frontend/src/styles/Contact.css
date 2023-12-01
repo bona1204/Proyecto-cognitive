@@ -1,0 +1,63 @@
+* {
+    box-sizing: border-box;
+}
+
+.bodycontact{
+    font-family: 'Arial', sans-serif;
+    background-image: url("../assets/images/backgroundimage.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    width: 100%;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center; /* Estas tres líneas son las que permiten centrar el contenido */
+}
+
+.conctact-container {
+    width: 100%;
+    max-width: 500px;
+    margin: 0; /* Cambiamos el margen superior e inferior a 0 */
+    padding: 20px;
+    background-color: rgba(128, 128, 128, 0.7);
+    border-radius: 5px;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.contact-header {
+    text-align: center;
+    margin-bottom: 20px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    height: 150px;
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-form input {
+    margin-bottom: 10px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
+
+.contact-form button {
+    padding: 10px 15px;
+    background-color: #4CAF50;
+    color: #ffffff;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.contact-form button:hover {
+    background-color: #45a049;
+}

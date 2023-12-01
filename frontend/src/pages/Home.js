@@ -13,7 +13,7 @@ export function Home() {
           <div className="content">
             <h1>Bienvenido a KanisTech</h1>
             <h2>Innovación en Riego Automatizado</h2>
-            <p>Optimiza tu cultivo con tecnología avanzada y sostenible...</p>
+            <p>Optimiza tu cultivo con tecnología avanzada y sostenible para mejorar el rendimiento</p>
             <Link to="/register" className="button">Regístrate</Link>  {/* Modifica el <a> a un componente <Link> para dirigir a la página Register */}
           </div>
         </div>

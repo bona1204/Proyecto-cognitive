@@ -26,16 +26,19 @@
     font-size: 24px;
     margin-bottom: 20px;
     text-align: center;
+    color: black;
 }
 
 .login-form {
     display: flex;
     flex-direction: column;
+
 }
 
 .input-group {
     position: relative;
     margin: 10px 0;
+
 }
 
 .login-form input[type="text"], 
@@ -56,6 +59,7 @@
     height: 20px;
     background-size: cover;
     background-repeat: no-repeat;
+    background: black;
 }
 
 .user-icon {
@@ -69,6 +73,7 @@
 .acceder-btn, .registrar-btn {
     padding: 10px;
     color: #ffffff;
+    text-align: center;
     border: none;
     border-radius: 5px;
     cursor: pointer;
@@ -87,8 +92,10 @@
 
 .registrar-btn {
     background-color: #32A843;
+
 }
 
 .registrar-btn:hover {
     background-color: #2C963D;
+
 }

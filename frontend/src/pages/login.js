@@ -1,37 +1,63 @@
-import React, { useEffect } from 'react'; 
+import React, { useState } from 'react';
+import { Link } from 'react-router-dom';
+
 import '../styles/login.css';
 
 function Login() {
+  const [username, setUsername] = useState('');
+  const [password, setPassword] = useState('');
 
-  useEffect(() => {
-    const loginForm = document.querySelector(".login-form");
+  const handleInputChange = (event) => {
+    const { name, value } = event.target;
 
-    loginForm.addEventListener("submit", function(event) {
-        event.preventDefault();
+    if (name === 'username') {
+      setUsername(value);
+    } else if (name === 'password') {
+      setPassword(value);
+    }
+  };
 
-        const username = event.target.querySelector('input[type="text"]').value;
-        const password = event.target.querySelector('input[type="password"]').value;
+  const handleSubmit = (event) => {
+    event.preventDefault();
 
-        alert(`Usuario: ${username}\nContraseña: ${password}`);
-    });
-
-  }, []);
+    // Validar que ambos campos estén llenos
+    if (username.trim() === '' || password.trim() === '') {
+      alert('Por favor, completa ambos campos.');
+    } else {
+      //alert(`Usuario: ${username}\nContraseña: ${password}`);
+      // Después de mostrar la alerta, redirige a Dashboard
+      window.location.href = "/Dashboard";
+    }
+  };
 
   return (
     <div className='bodylogin'>
       <div className="login-container">
         <h2 className="login-header">LOGIN</h2>
-        <form className="login-form">
+        <form className="login-form" onSubmit={handleSubmit}>
           <div className="input-group">
             <span className="icon user-icon"></span>
-            <input type="text" placeholder="Usuario" />
+            <input
+              type="text"
+              name="username"
+              placeholder="Usuario"
+              value={username}
+              onChange={handleInputChange}
+            />
           </div>
           <div className="input-group">
             <span className="icon password-icon"></span>
-            <input type="password" placeholder="Contraseña" />
+            <input
+              type="password"
+              name="password"
+              placeholder="Contraseña"
+              value={password}
+              onChange={handleInputChange}
+            />
           </div>
           <button type="submit" className="acceder-btn">Acceder</button>
-          <button type="button" className="registrar-btn">Registrarse</button>
+          {/* Enlace para navegar a Register */}
+          <Link to="/register" className="acceder-btn">Regístrate</Link>
         </form>
       </div>
     </div>

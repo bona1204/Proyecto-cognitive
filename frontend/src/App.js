@@ -5,6 +5,7 @@ import { AboutUs } from './pages/AboutUs';
 import { Contact } from './pages/Contact';
 import Register from './pages/register';
 import Login from './pages/login';
+import Dashboard from './pages/Dashboard';
 import './styles/App.css';
 
 function App() {
@@ -16,6 +17,7 @@ function App() {
         <Route path="/contact" element={<Contact />} />
         <Route path="/register" element={<Register />} />  {/* Ruta para la página Register */}
         <Route path="/login" element={<Login />} />  {/* Ruta añadida para la página Login */}
+        <Route path="/dashboard" element={<Dashboard />} />
       </Routes>
     </Router>
   );
