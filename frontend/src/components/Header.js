@@ -6,9 +6,9 @@ function Header() {
       <div className="navbar">
         <div className="navbar-brand">KANISTECH</div>
         <div className="nav-links">
-          <a href="#" className="active">Inicio</a>
-          <a href="#">Nosotros</a>
-          <a href="#">Contact</a>
+          <a href="/" className="active">Inicio</a>
+          <a href="/about">Nosotros</a>
+          <a href="/contact">Contact</a>
           <a href="/login" className="client-area">Área de Clientes</a>  {/* Modificación aquí */}
         </div>
       </div>
