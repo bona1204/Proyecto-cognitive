@@ -50,6 +50,13 @@
     line-height: 106.5%;
     display: inline-block;
   }
+
+  .logout-link {
+    color: #ffffff; /* Cambia el color según tus preferencias */
+    margin-top: 8px; /* Ajusta el margen según tus preferencias */
+    cursor: pointer; /* Cambia el cursor al pasar por encima */
+  }
+  
   
   
 
