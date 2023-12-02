@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import '../styles/Contact.css';
+import Header from '../components/Header';
 
 export function Contact() {
     const [formData, setFormData] = useState({
@@ -29,6 +30,7 @@ export function Contact() {
 
     return (
         <div className='bodycontact'>
+            
             <div className="conctact-container">
                 <div className="contact-header">
                     <h2>KanisTech</h2>

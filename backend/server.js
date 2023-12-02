@@ -93,6 +93,67 @@ app.post('/api/login', (req, res) => {
 
 // Puedes agregar más rutas según sea necesario
 
+
+/*/*CREATE TABLE usuarios (
+    id INT PRIMARY KEY AUTO_INCREMENT,
+    nombre VARCHAR(255) NOT NULL,
+    email VARCHAR(255) NOT NULL,
+    password VARCHAR(255) NOT NULL
+);
+
+INSERT INTO usuarios_admi (nombre, email, password) VALUES
+('Rosario Quispe', 'rosario.quispe@utec.edu.pe', 'Ut3c_2009');
+
+//se necesita para logear al admi usuarios
+*/
+
+
+app.post('/api/login_admi', (req, res) => {
+    const { email, password } = req.body;
+
+    // Verificar la autenticación en la base de datos
+    const checkLoginQuery = 'SELECT * FROM usuarios_admi WHERE email = ? AND password = ?';
+    db.query(checkLoginQuery, [email, password], (err, results) => {
+        if (err) {
+            console.error('Error al verificar la autenticación:', err);
+            res.status(500).json({ success: false, error: 'Error interno del servidor' });
+            return;
+        }
+
+        if (results.length > 0) {
+            // Autenticación exitosa
+            res.json({ success: true });
+        } else {
+            // Credenciales incorrectas
+            res.status(401).json({ success: false, error: 'Credenciales incorrectas o registrese primero' });
+        }
+    });
+});
+
+
+
+// Endpoint para obtener todos los usuarios
+app.get('/api/getUsers', (req, res) => {
+    const getUsersQuery = 'SELECT id, nombre, email FROM usuarios';
+    db.query(getUsersQuery, (err, results) => {
+        if (err) {
+            console.error('Error al obtener usuarios:', err);
+            res.status(500).json({ success: false, error: 'Error interno del servidor' });
+            return;
+        }
+
+        res.json({ success: true, users: results });
+    });
+});
+
+
+
+
+
+
+
 app.listen(port, () => {
     console.log(`Servidor escuchando en http://localhost:${port}`);
 });
+
+

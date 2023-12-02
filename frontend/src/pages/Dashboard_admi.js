@@ -1,6 +1,7 @@
 import React from 'react';
 import userIcon from '../assets/images/user.png';
-import '../styles/dashboard.css';
+import { Link } from 'react-router-dom'; 
+import '../styles/dashboard_admi.css';
 
 function Dashboard() {
   // Manejador de clic para cerrar sesión
@@ -23,8 +24,10 @@ function Dashboard() {
             <div className="fondo-index"></div>
             <b className="kanistech">KANISTECH</b>
 
+            <a href="/usuario_crud" className="Lista_Usuarios">Usuarios</a>
+
             <div className="user-container">
-              <b className="user">Usuario</b>
+              <b className="user">Rosario Quispe</b>
               <a href="#" className="logout-link" onClick={handleLogout}>
                 Cerrar Sesión
               </a>
