@@ -35,8 +35,15 @@ function Dashboard() {
             <div className="fondo-cabecera"></div>
             <b className="auto-water">AUTO WATER </b>
           </div>
-          {/* aquí embeber el power bi*/}
-          <img className="powerbi-icon" alt="" src={require('../assets/images/user.png').default} />
+          <div className='graficos'>
+          <iframe
+              title="Humedad y temperatura"
+              width="1800"
+              height="750"
+              src="https://app.powerbi.com/view?r=eyJrIjoiZjAyZDY1NDQtYzgwMy00YzkzLTg0M2EtN2MxYWQwNjhkMWFmIiwidCI6IjI4NmJlM2JmLTk5OTYtNDA5Ny1hMTU0LTMzMjAwNjFmYTA1NSIsImMiOjR9&pageName=ReportSection"
+              allowFullScreen="true">
+            </iframe>   
+          </div>
         </div>
       </div>
     </div>

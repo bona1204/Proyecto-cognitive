@@ -15,7 +15,16 @@
   background-color: #009c77;
   height: 8vh; /* Mantenido como unidades relativas */
 }
-
+.graficos{
+  position: relative;
+  top: 22vh; /* Cambiado a unidades relativas */
+  left: 2vh;
+  width: 100%; /* Cambiado a unidades relativas */
+  height: 9vh; /* Cambiado a unidades relativas */
+  font-size: 1vw; /* Cambiado a unidades relativas */
+  color: var(--color-black);
+  font-family: var(--font-montserrat);
+}
 .kanistech {
   position: absolute;
   top: 4vh; /* Cambiado a unidades relativas */

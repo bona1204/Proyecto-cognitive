@@ -76,14 +76,22 @@
 .cabecera {
   position: absolute;
   top: 8vh; /* Cambiado a unidades relativas */
-  left: 0;
-  width: 100%; /* Cambiado a unidades relativas */
+  width: 35vh; /* Cambiado a unidades relativas */
   height: 8vh; /* Cambiado a unidades relativas */
   font-size: 1vw; /* Cambiado a unidades relativas */
   color: var(--color-black);
   font-family: var(--font-montserrat);
 }
-
+.graficos{
+  position: relative;
+  top: 22vh; /* Cambiado a unidades relativas */
+  left: 2vh;
+  width: 100%; /* Cambiado a unidades relativas */
+  height: 9vh; /* Cambiado a unidades relativas */
+  font-size: 1vw; /* Cambiado a unidades relativas */
+  color: var(--color-black);
+  font-family: var(--font-montserrat);
+}
 .powerbi-icon {
   position: absolute;
   top: 22vh; /* Cambiado a unidades relativas */
