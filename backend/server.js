@@ -22,9 +22,9 @@ app.use(bodyParser.json());
 // Configuración de la conexión a la base de datos
 const db = mysql.createConnection({
     host: 'localhost',
-    user: 'CloudSAd989a782',
-    password: 'Alonso_1204',
-    database: 'proyecto',
+    user: 'root',
+    password: '',
+    database: 'db_poo',
 });
 
 db.connect((err) => {

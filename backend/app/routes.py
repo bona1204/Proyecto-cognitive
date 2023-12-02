@@ -5,13 +5,8 @@ from app.models import User, Sensor, Admin
 @app.route('/')
 def index():
    print('Request for index page received')
-   return render_template('index.html')
-@app.route('/<path:path>')
-def serve(path):
-    if path != "" and os.path.exists(app.static_folder + '/' + path):
-        return send_from_directory(app.static_folder, path)
-    else:
-        return send_from_directory(app.static_folder, 'index.html')
+
+   return send_from_directory(app.static_folder, 'index.html')
 
 # Rutas para User
 @app.route('/users', methods=['GET', 'POST'])
