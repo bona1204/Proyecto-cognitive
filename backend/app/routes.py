@@ -1,12 +1,17 @@
 from flask import render_template,jsonify, redirect, url_for, request, flash, send_from_directory
 from app import app, db
 from app.models import User, Sensor, Admin
+import os
 
-@app.route('/')
-def index():
-   print('Request for index page received')
+@app.route('/', defaults={'path': ''})
+@app.route('/<path:path>')
+def catch_all(path):
+    if path != "" and os.path.exists(os.path.join(app.static_folder, path)):
+        return send_from_directory(app.static_folder, path)
+    else:
+        # Asegúrate de que 'index.html' esté en la carpeta 'build'
+        return send_from_directory(app.static_folder, 'index.html')
 
-   return send_from_directory(app.static_folder, 'index.html')
 
 # Rutas para User
 @app.route('/users', methods=['GET', 'POST'])
