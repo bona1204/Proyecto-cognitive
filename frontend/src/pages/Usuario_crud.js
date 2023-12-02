@@ -42,7 +42,9 @@ function Usuario_crud() {
             <div className="fondo-index"></div>
             <b className="kanistech">KANISTECH</b>
 
-            <Link to="/Dashboard_admi" className="Lista_Usuarios">Dashboard</Link>
+            <a href="/usuario_crud" className="Lista_Usuarios">Usuarios</a>
+
+            <a href="/dashboard_admi" className="Dashboard">Dashboard</a>
 
             <div className="user-container">
               <b className="user">Rosario Quispe</b>

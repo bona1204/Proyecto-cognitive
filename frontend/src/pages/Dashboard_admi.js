@@ -26,6 +26,8 @@ function Dashboard() {
 
             <a href="/usuario_crud" className="Lista_Usuarios">Usuarios</a>
 
+            <a href="/dashboard_admi" className="Dashboard">Dashboard</a>
+
             <div className="user-container">
               <b className="user">Rosario Quispe</b>
               <a href="#" className="logout-link" onClick={handleLogout}>

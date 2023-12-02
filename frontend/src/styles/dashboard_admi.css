@@ -29,10 +29,28 @@
 .Lista_Usuarios {
   position: absolute;
   top: 4vh;
-  left: 46.67vw;
+  left: 5.67vw;
   line-height: 106.5%;
   width: auto; /* Ancho automático para adaptarse al contenido */
   min-width: 5vw; /* Ancho mínimo para evitar que sea más pequeño que el texto */
+  height: 3vh; /* Ajusta la altura según tus necesidades */
+  background-color: #36ff4a;
+  color: black;
+  border-radius: 10px; /* Ajusta el valor de acuerdo a la curvatura que deseas */
+  display: flex;
+  align-items: center;
+  justify-content: center; /* Para centrar horizontalmente el texto */
+  text-decoration: none; /* Para quitar el subrayado de los enlaces si es necesario */
+}
+
+
+.Dashboard {
+  position: absolute;
+  top: 4vh;
+  left: 60.67vw;
+  line-height: 106.5%;
+  width: auto; /* Ancho automático para adaptarse al contenido */
+  min-width: 7vw; /* Ancho mínimo para evitar que sea más pequeño que el texto */
   height: 3vh; /* Ajusta la altura según tus necesidades */
   background-color: #36ff4a;
   color: black;
