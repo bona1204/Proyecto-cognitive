@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/static/css/main.734831ed.css",
+    "main.js": "/static/js/main.9a1d2ef3.js",
+    "static/media/backgroundimage.png": "/static/media/backgroundimage.9a48aee5bda0f801d1e6.png",
+    "static/media/riego_4.png": "/static/media/riego_4.bc5c7f5d4b4622e0b2bb.png",
+    "static/media/riego_1.png": "/static/media/riego_1.91cb5196b9559d6492f5.png",
+    "static/media/riego_3.png": "/static/media/riego_3.43ae7624540ff7498170.png",
+    "static/media/riego_2.png": "/static/media/riego_2.f9d36c03154a29195a61.png",
+    "static/media/slick.svg": "/static/media/slick.2630a3e3eab21c607e21.svg",
+    "static/media/slick.eot": "/static/media/slick.a4e97f5a2a64f0ab1323.eot",
+    "static/media/slick.ttf": "/static/media/slick.c94f7671dcc99dce43e2.ttf",
+    "static/media/slick.woff": "/static/media/slick.295183786cd8a1389865.woff",
+    "index.html": "/index.html",
+    "main.734831ed.css.map": "/static/css/main.734831ed.css.map",
+    "main.9a1d2ef3.js.map": "/static/js/main.9a1d2ef3.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.734831ed.css",
+    "static/js/main.9a1d2ef3.js"
+  ]
+}
