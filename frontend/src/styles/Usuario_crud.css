@@ -1,0 +1,201 @@
+.fondo-index,
+.fondo1 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  
+}
+
+.fondo1 {
+  background-color: rgba(0, 156, 119, 0.1);
+  height: 100%;
+  
+}
+
+.fondo-index {
+  background-color: #009c77;
+  height: 8vh;
+}
+
+.kanistech {
+  position: absolute;
+  top: 4vh;
+  left: 6.67vw;
+  line-height: 106.5%;
+  display: inline-block;
+  width: 6.11vw;
+  height: 1.11vh;
+  color: white; /* Cambiado a blanco para mayor visibilidad */
+}
+
+.Lista_Usuarios {
+  position: absolute;
+  top: 4vh;
+  left: 5.67vw;
+  line-height: 106.5%;
+  width: auto; /* Ancho automático para adaptarse al contenido */
+  min-width: 5vw; /* Ancho mínimo para evitar que sea más pequeño que el texto */
+  height: 3vh; /* Ajusta la altura según tus necesidades */
+  background-color: #36ff4a;
+  color: black;
+  border-radius: 10px; /* Ajusta el valor de acuerdo a la curvatura que deseas */
+  display: flex;
+  align-items: center;
+  justify-content: center; /* Para centrar horizontalmente el texto */
+  text-decoration: none; /* Para quitar el subrayado de los enlaces si es necesario */
+}
+
+
+.Dashboard {
+  position: absolute;
+  top: 4vh;
+  left: 60.67vw;
+  line-height: 106.5%;
+  width: auto; /* Ancho automático para adaptarse al contenido */
+  min-width: 7vw; /* Ancho mínimo para evitar que sea más pequeño que el texto */
+  height: 3vh; /* Ajusta la altura según tus necesidades */
+  background-color: #36ff4a;
+  color: black;
+  border-radius: 10px; /* Ajusta el valor de acuerdo a la curvatura que deseas */
+  display: flex;
+  align-items: center;
+  justify-content: center; /* Para centrar horizontalmente el texto */
+  text-decoration: none; /* Para quitar el subrayado de los enlaces si es necesario */
+}
+
+.index1 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 84px;
+  
+}
+
+.user-container {
+  position: absolute;
+  top: 39.29%;
+  left: 84.79%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.user {
+  height: 20.24%;
+  width: 9.1%;
+  line-height: 106.5%;
+  display: inline-block;
+  color: white; /* Cambiado a blanco para mayor visibilidad */
+}
+
+.logout-link {
+  color: white;
+  margin-top: 8px;
+  cursor: pointer;
+}
+
+.fondo-cabecera {
+  background-color: rgba(0, 156, 119, 0.5);
+  height: 8vh;
+}
+
+.auto-water {
+  position: absolute;
+  top: 4vh;
+  left: 44vw;
+  font-size: 1.5vw;
+  color: #1f1f1f;
+}
+
+.cabecera {
+  position: absolute;
+  top: 8vh;
+  left: 0;
+  width: 100%;
+  height: 8vh;
+  font-size: 1vw;
+  color: var(--color-black);
+  font-family: var(--font-montserrat);
+}
+
+.rea-de-clientes-dashboard {
+  display: flex;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.bodyDashboard {
+  position: relative;
+  display: flex;
+  width: 100vw;
+  height: 100vh;
+  text-align: left;
+
+}
+
+
+
+.user-list-container {
+  width: 100vw;
+  height: 0vh;
+  margin-top: 100px;
+  text-align: center; /* Alinea el contenido al centro */
+}
+
+.table-container {
+  width: 70%; /* Puedes ajustar el ancho según tus necesidades */
+  margin: 0 auto; /* Centra el contenedor horizontalmente */
+}
+
+.table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+.table th,
+.table td {
+  padding: 12px;
+  text-align: center;
+  border: 1px solid #ddd;
+}
+
+.table th {
+  background-color: #009c77;
+  color: white;
+
+}
+
+.table tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+.table tr:hover {
+  background-color: #f2f2f2;
+}
+
+.btn {
+  padding: 8px 12px;
+  margin-right: 5px;
+}
+
+.add_user {
+  background-color: #36ff4a; /* Cambia el color de fondo según tus preferencias */
+  color: #fff; /* Cambia el color del texto según tus preferencias */
+  border: 1px solid #36ff4a; /* Cambia el color del borde según tus preferencias */
+  padding: 8px 12px; /* Ajusta el espaciado interno del botón según tus preferencias */
+  text-decoration: none; /* Quita el subrayado del enlace */
+  display: inline-block;
+  transition: background-color 0.3s ease, color 0.3s ease; /* Agrega transiciones suaves */
+}
+
+.add_user:hover {
+  background-color: #36ff4a; /* Cambia el color de fondo al pasar el mouse según tus preferencias */
+  color: #fff; /* Cambia el color del texto al pasar el mouse según tus preferencias */
+}

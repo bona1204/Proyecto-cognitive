@@ -41,6 +41,12 @@
     flex-direction: column;
 }
 
+.centered-link {
+    display: block;
+    text-align: center;
+    margin-top: 10px; /* Ajusta el espacio superior según tus preferencias */
+  }
+  
 .register-form input {
     margin-bottom: 10px;
     padding: 10px;

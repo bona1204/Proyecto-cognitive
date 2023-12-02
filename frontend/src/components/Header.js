@@ -8,8 +8,9 @@ function Header() {
         <div className="nav-links">
           <a href="/" className="active">Inicio</a>
           <a href="/about">Nosotros</a>
-          <a href="/contact">Contact</a>
+          <a href="/Contact">Contact</a>
           <a href="/login" className="client-area">Área de Clientes</a>  {/* Modificación aquí */}
+          <a href="/login_admi" className="client-area">Área de Admis</a> 
         </div>
       </div>
     </header>

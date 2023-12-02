@@ -1,0 +1,110 @@
+.fondo-index,
+.fondo1 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%; /* Cambiado a unidades relativas */
+}
+
+.fondo1 {
+  background-color: rgba(0, 156, 119, 0.1);
+  height: 100%; /* Cambiado a unidades relativas */
+}
+
+.fondo-index {
+  background-color: #009c77;
+  height: 8vh; /* Mantenido como unidades relativas */
+}
+
+.kanistech {
+  position: absolute;
+  top: 4vh; /* Cambiado a unidades relativas */
+  left: 6.67vw; /* Cambiado a unidades relativas */
+  line-height: 106.5%;
+  display: inline-block;
+  width: 6.11vw; /* Cambiado a unidades relativas */
+  height: 1.11vh; /* Cambiado a unidades relativas */
+}
+
+.index1 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 84px;
+  }
+  
+  .user-container {
+    position: absolute;
+    top: 39.29%;
+    left: 84.79%;
+    transform: translate(-50%, -50%); /* Centra el contenido */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .user {
+    height: 20.24%;
+    width: 9.1%;
+    line-height: 106.5%;
+    display: inline-block;
+  }
+
+  .logout-link {
+    color: #ffffff; /* Cambia el color según tus preferencias */
+    margin-top: 8px; /* Ajusta el margen según tus preferencias */
+    cursor: pointer; /* Cambia el cursor al pasar por encima */
+  }
+  
+  
+  
+
+.fondo-cabecera {
+  background-color: rgba(0, 156, 119, 0.5);
+  height: 8vh; /* Cambiado a unidades relativas */
+}
+
+.auto-water {
+  position: absolute;
+  top: 4vh; /* Cambiado a unidades relativas */
+  left: 44vw; /* Cambiado a unidades relativas */
+  font-size: 1.5vw; /* Cambiado a unidades relativas */
+  color: #1f1f1f;
+}
+
+.cabecera {
+  position: absolute;
+  top: 8vh; /* Cambiado a unidades relativas */
+  left: 0;
+  width: 100%; /* Cambiado a unidades relativas */
+  height: 8vh; /* Cambiado a unidades relativas */
+  font-size: 1vw; /* Cambiado a unidades relativas */
+  color: var(--color-black);
+  font-family: var(--font-montserrat);
+}
+
+.powerbi-icon {
+  position: absolute;
+  top: 22vh; /* Cambiado a unidades relativas */
+  left: 1vw; /* Cambiado a unidades relativas */
+  width: 94vw; /* Cambiado a unidades relativas */
+  height: 43vh; /* Cambiado a unidades relativas */
+}
+
+.rea-de-clientes-dashboard {
+  display: flex;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%; /* Cambiado a unidades relativas */
+  height: 100%; /* Cambiado a unidades relativas */
+}
+
+.bodyDashboard {
+  position: relative;
+  display: flex;
+  width: 100vw; /* Cambiado a unidades relativas */
+  height: 100vh; /* Cambiado a unidades relativas */
+  text-align: left;
+}

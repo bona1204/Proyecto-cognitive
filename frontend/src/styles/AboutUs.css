@@ -1,0 +1,14 @@
+.image-carousel-container {
+    width: 35%; /* Ajusta según tus necesidades */
+    height: 50%;
+    float: right;
+    margin-top: 20px; /* Ajusta según tus necesidades */
+    align-items: center;
+    position: relative;
+    right: 0;
+    margin-left: auto;
+}
+
+
+
+  
